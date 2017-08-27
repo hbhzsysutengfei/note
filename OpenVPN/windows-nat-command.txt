@@ -1,0 +1,2 @@
+netsh interface portproxy add v4tov4 listenport=11111 listenaddress=10.10.10.10 connectport=80 connectaddress=10.10.10.11
+netsh interface portproxy del v4tov4 listenport=11111 listenaddress=10.10.10.10

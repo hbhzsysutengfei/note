@@ -1,0 +1,83 @@
+Wed Aug 10 11:02:58 2016 OpenVPN 2.3.2 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [PKCS11] [eurephia] [MH] [IPv6] built on Dec  1 2014
+Wed Aug 10 11:02:58 2016 WARNING: file '/etc/openvpn/client-a.key' is group or others accessible
+Wed Aug 10 11:02:58 2016 WARNING: file '/etc/openvpn/ta.key' is group or others accessible
+Wed Aug 10 11:02:58 2016 Control Channel Authentication: using '/etc/openvpn/ta.key' as a OpenVPN static key file
+Wed Aug 10 11:02:58 2016 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 11:02:58 2016 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 11:02:58 2016 Socket Buffers: R=[87380->131072] S=[16384->131072]
+Wed Aug 10 11:02:58 2016 Attempting to establish TCP connection with [AF_INET]120.236.144.159:1194 [nonblock]
+Wed Aug 10 11:02:59 2016 TCP connection established with [AF_INET]120.236.144.159:1194
+Wed Aug 10 11:02:59 2016 TCPv4_CLIENT link local: [undef]
+Wed Aug 10 11:02:59 2016 TCPv4_CLIENT link remote: [AF_INET]120.236.144.159:1194
+Wed Aug 10 11:02:59 2016 TLS: Initial packet from [AF_INET]120.236.144.159:1194, sid=51be2df9 94ee4db3
+Wed Aug 10 11:03:00 2016 VERIFY OK: depth=1, C=US, ST=CA, L=SanFrancisco, O=OpenVPN, OU=OpenVPN2, CN=openvpn_ca, name=softown_admin, emailAddress=mail@qq.com
+Wed Aug 10 11:03:00 2016 Validating certificate key usage
+Wed Aug 10 11:03:00 2016 ++ Certificate has key usage  00a0, expects 00a0
+Wed Aug 10 11:03:00 2016 VERIFY KU OK
+Wed Aug 10 11:03:00 2016 Validating certificate extended key usage
+Wed Aug 10 11:03:00 2016 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Wed Aug 10 11:03:00 2016 VERIFY EKU OK
+Wed Aug 10 11:03:00 2016 VERIFY OK: depth=0, C=US, ST=CA, L=SanFrancisco, O=OpenVPN, OU=OpenVPN2, CN=server, name=server, emailAddress=mail@qq.com
+Wed Aug 10 11:03:00 2016 Data Channel Encrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Wed Aug 10 11:03:00 2016 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 11:03:00 2016 Data Channel Decrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Wed Aug 10 11:03:00 2016 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 11:03:00 2016 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 1024 bit RSA
+Wed Aug 10 11:03:00 2016 [server] Peer Connection Initiated with [AF_INET]120.236.144.159:1194
+Wed Aug 10 11:03:02 2016 SENT CONTROL [server]: 'PUSH_REQUEST' (status=1)
+Wed Aug 10 11:03:02 2016 PUSH: Received control message: 'PUSH_REPLY,route 10.8.0.0 255.255.255.0,topology net30,ping 10,ping-restart 120,ifconfig 10.8.0.6 10.8.0.5'
+Wed Aug 10 11:03:02 2016 OPTIONS IMPORT: timers and/or timeouts modified
+Wed Aug 10 11:03:02 2016 OPTIONS IMPORT: --ifconfig/up options modified
+Wed Aug 10 11:03:02 2016 OPTIONS IMPORT: route options modified
+Wed Aug 10 11:03:02 2016 ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=68:f7:28:a3:5f:77
+Wed Aug 10 11:03:02 2016 TUN/TAP device tun0 opened
+Wed Aug 10 11:03:02 2016 TUN/TAP TX queue length set to 100
+Wed Aug 10 11:03:02 2016 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Wed Aug 10 11:03:02 2016 /sbin/ip link set dev tun0 up mtu 1500
+Wed Aug 10 11:03:02 2016 /sbin/ip addr add dev tun0 local 10.8.0.6 peer 10.8.0.5
+Wed Aug 10 11:03:03 2016 /sbin/ip route add 10.8.0.0/24 via 10.8.0.5
+Wed Aug 10 11:03:03 2016 Initialization Sequence Completed
+Wed Aug 10 11:04:09 2016 event_wait : Interrupted system call (code=4)
+Wed Aug 10 11:04:09 2016 /sbin/ip route del 10.8.0.0/24
+Wed Aug 10 11:04:09 2016 Closing TUN/TAP interface
+Wed Aug 10 11:04:09 2016 /sbin/ip addr del dev tun0 local 10.8.0.6 peer 10.8.0.5
+Wed Aug 10 11:04:09 2016 SIGTERM[hard,] received, process exiting
+Wed Aug 10 19:46:28 2016 OpenVPN 2.3.2 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [PKCS11] [eurephia] [MH] [IPv6] built on Dec  1 2014
+Wed Aug 10 19:46:28 2016 WARNING: file '/etc/openvpn/client-a.key' is group or others accessible
+Wed Aug 10 19:46:28 2016 WARNING: file '/etc/openvpn/ta.key' is group or others accessible
+Wed Aug 10 19:46:28 2016 Control Channel Authentication: using '/etc/openvpn/ta.key' as a OpenVPN static key file
+Wed Aug 10 19:46:28 2016 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 19:46:28 2016 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 19:46:28 2016 Socket Buffers: R=[87380->131072] S=[16384->131072]
+Wed Aug 10 19:46:28 2016 Attempting to establish TCP connection with [AF_INET]120.236.144.159:1194 [nonblock]
+Wed Aug 10 19:46:29 2016 TCP connection established with [AF_INET]120.236.144.159:1194
+Wed Aug 10 19:46:29 2016 TCPv4_CLIENT link local: [undef]
+Wed Aug 10 19:46:29 2016 TCPv4_CLIENT link remote: [AF_INET]120.236.144.159:1194
+Wed Aug 10 19:46:29 2016 TLS: Initial packet from [AF_INET]120.236.144.159:1194, sid=25a5c76c 7eabbd99
+Wed Aug 10 19:46:29 2016 VERIFY OK: depth=1, C=US, ST=CA, L=SanFrancisco, O=OpenVPN, OU=OpenVPN2, CN=openvpn_ca, name=softown_admin, emailAddress=mail@qq.com
+Wed Aug 10 19:46:29 2016 Validating certificate key usage
+Wed Aug 10 19:46:29 2016 ++ Certificate has key usage  00a0, expects 00a0
+Wed Aug 10 19:46:29 2016 VERIFY KU OK
+Wed Aug 10 19:46:29 2016 Validating certificate extended key usage
+Wed Aug 10 19:46:29 2016 ++ Certificate has EKU (str) TLS Web Server Authentication, expects TLS Web Server Authentication
+Wed Aug 10 19:46:29 2016 VERIFY EKU OK
+Wed Aug 10 19:46:29 2016 VERIFY OK: depth=0, C=US, ST=CA, L=SanFrancisco, O=OpenVPN, OU=OpenVPN2, CN=server, name=server, emailAddress=mail@qq.com
+Wed Aug 10 19:46:30 2016 Data Channel Encrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Wed Aug 10 19:46:30 2016 Data Channel Encrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 19:46:30 2016 Data Channel Decrypt: Cipher 'BF-CBC' initialized with 128 bit key
+Wed Aug 10 19:46:30 2016 Data Channel Decrypt: Using 160 bit message hash 'SHA1' for HMAC authentication
+Wed Aug 10 19:46:30 2016 Control Channel: TLSv1, cipher TLSv1/SSLv3 DHE-RSA-AES256-SHA, 1024 bit RSA
+Wed Aug 10 19:46:30 2016 [server] Peer Connection Initiated with [AF_INET]120.236.144.159:1194
+Wed Aug 10 19:46:32 2016 SENT CONTROL [server]: 'PUSH_REQUEST' (status=1)
+Wed Aug 10 19:46:32 2016 PUSH: Received control message: 'PUSH_REPLY,route 10.8.0.0 255.255.255.0,topology net30,ping 10,ping-restart 120,ifconfig 10.8.0.6 10.8.0.5'
+Wed Aug 10 19:46:32 2016 OPTIONS IMPORT: timers and/or timeouts modified
+Wed Aug 10 19:46:32 2016 OPTIONS IMPORT: --ifconfig/up options modified
+Wed Aug 10 19:46:32 2016 OPTIONS IMPORT: route options modified
+Wed Aug 10 19:46:32 2016 ROUTE_GATEWAY 192.168.1.1/255.255.255.0 IFACE=eth0 HWADDR=68:f7:28:a3:5f:77
+Wed Aug 10 19:46:32 2016 TUN/TAP device tun0 opened
+Wed Aug 10 19:46:32 2016 TUN/TAP TX queue length set to 100
+Wed Aug 10 19:46:32 2016 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Wed Aug 10 19:46:32 2016 /sbin/ip link set dev tun0 up mtu 1500
+Wed Aug 10 19:46:32 2016 /sbin/ip addr add dev tun0 local 10.8.0.6 peer 10.8.0.5
+Wed Aug 10 19:46:32 2016 /sbin/ip route add 10.8.0.0/24 via 10.8.0.5
+Wed Aug 10 19:46:32 2016 Initialization Sequence Completed
